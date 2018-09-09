@@ -20,7 +20,8 @@ public:
 	{
 		centerX = cX;
 		centerY = cY;
-		radiius = r;			
+		radiius = r;	
+		calcArea();
 	}
 	long int getCenterX() const
 	{
@@ -29,6 +30,11 @@ public:
 	long int getCenterY() const
 	{
 		return centerY;
+	}
+	virtual double calcArea() const
+	{
+		area = 3.14159 * radius * radius;
+		return area;
 	}
 };
 
