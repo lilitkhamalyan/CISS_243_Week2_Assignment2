@@ -22,6 +22,14 @@ public:
 		centerY = cY;
 		radiius = r;			
 	}
+	long int getCenterX() const
+	{
+		return centerX;
+	}
+	long int getCenterY() const
+	{
+		return centerY;
+	}
 };
 
 #endif
