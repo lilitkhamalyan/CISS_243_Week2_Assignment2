@@ -5,6 +5,11 @@ using namespace std;
 
 class Circle : public BasicShape
 {
+private:
+	long int centerX;
+	long int centerY;
+	double radius;
+public:
 
 };
 
