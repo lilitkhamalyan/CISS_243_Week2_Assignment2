@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClInclude Include="BasicShape.h" />
     <ClInclude Include="Circle.h" />
+    <ClInclude Include="Rectangle.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />

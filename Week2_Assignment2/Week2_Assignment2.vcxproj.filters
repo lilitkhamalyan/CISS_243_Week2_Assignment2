@@ -21,6 +21,9 @@
     <ClInclude Include="Circle.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
