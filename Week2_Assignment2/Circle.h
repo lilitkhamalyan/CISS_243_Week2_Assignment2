@@ -2,7 +2,7 @@
 #define CIRCLE_H
 #include "BasicShape.h"
 using namespace std;
-
+// Circle class dectaration 
 class Circle : public BasicShape
 {
 private:
@@ -10,19 +10,22 @@ private:
 	long int centerY;
 	double radius;
 public:
-	Circle() : BasicShape()
+	// Default constructor 
+	Circle() 
 	{
 		centerX = 0;
-		CenterY = 0;
+		centerY = 0;
 		radius = 0.0;
 	}
-	Circle(double a, long int cX, long int cY, double r) : BasicShape(double a)
+	// Constructor
+	Circle(long int cX, long int cY, double r) 
 	{
 		centerX = cX;
 		centerY = cY;
-		radiius = r;	
-		calcArea();
+		radius = r;	
+		area = calcArea(); // Calling overridden calcArea function and assigning it to variable area.  
 	}
+	// Accessor functions
 	long int getCenterX() const
 	{
 		return centerX;
@@ -31,10 +34,12 @@ public:
 	{
 		return centerY;
 	}
+	// Overridden calcArea() function. 
 	virtual double calcArea() const
 	{
-		area = 3.14159 * radius * radius;
-		return area;
+		double areaCircle;
+		areaCircle = 3.14159 * radius * radius;
+		return areaCircle;
 	}
 };
 
