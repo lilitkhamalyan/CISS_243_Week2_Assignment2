@@ -17,6 +17,7 @@ int main()
 	BasicShape *rectangle = new Rectangle(8, 9);
 	cout << "The area of the rectangle is: " << endl;
 	DisplayArea(rectangle);
+	system("pause");
 	return 0;
 }
 void DisplayArea(BasicShape* shape)
